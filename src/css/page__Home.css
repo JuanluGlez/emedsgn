@@ -1,0 +1,174 @@
+.presentation__section {
+  height: calc(100vh - 144px);
+  display: flex;
+  align-items: flex-end;
+
+  & h1 {
+    width: 80%;
+    max-width: 1200px;
+  }
+}
+
+.steps__section {
+  background-color: var(--principal__10);
+  height: fit-content;
+
+  & p {
+    margin-bottom: 42px;
+  }
+
+  & .steps__article {
+    margin-top: 24px;
+
+    & div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+
+      & .step1, .step2, .step3 {
+        font-family: var(--principalTypo__medium);
+        font-size: 96px;
+        margin-right: 16px;
+        line-height: .8;
+      }
+
+      & div:nth-child(2) {
+        display: flex;
+        line-height: 1.1;
+        flex-wrap: wrap;
+
+        & .step__title1, .step__title2, .step__title3 {
+          font-size: 16px;
+          font-family: var(--principalTypo__medium);
+          width: 100%;
+          display: block;
+          margin-bottom: 8px;
+        }
+
+        & .step__decription1, .step__decription2, .step__decription3 {
+          font-size: 12px;
+          font-family: var(--principalTypo__light);
+        }
+      }
+    }
+
+    & div:nth-child(2){
+      & div:nth-child(1) {
+        order: 2;
+        margin: 0 0 0 16px;
+      }
+
+      & div:nth-child(2) {
+      order: 1;
+      }
+    }
+
+    & div:nth-child(3) {
+     margin-bottom: 0; 
+    }
+
+  }
+}
+
+.form__section {
+  background-color: var(--principal__10);
+  height: fit-content;
+
+  & article {
+
+    & h3 {
+      margin-bottom: 40px;
+
+    }
+
+    & p {
+      font-family: var(--principalTypo__light);
+      color: var(--principal__100);
+      margin-bottom: 40px;
+
+      & span {
+        font-family: var(--principalTypo__medium);
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 860px) and (orientation: landscape) {
+
+  .steps__section {
+  
+    & .steps__article {
+      display: flex;
+
+      & > div {
+        width: 33.33%;
+      }
+
+      & div {
+        margin-bottom: 0;
+
+        & .step1, .step2, .step3 {
+          font-size: 10vw;
+          margin-right: 2vw;
+          line-height: .76; 
+
+        }
+
+        & div:nth-child(2) {
+          line-height: 1.1;
+          height: 100%;
+
+          & .step__title1, .step__title2, .step__title3 {
+            font-size: 3vh;
+            margin-bottom: 0px;
+
+          }
+
+          & .step__decription1, .step__decription2, .step__decription3 {
+            font-size: 1.2vw;
+            align-self: flex-end;
+            margin-right: 1.5vw;
+
+          }
+
+        }
+      }
+
+      & div:nth-child(2) {
+    
+        & div:nth-child(1) {
+          order: 1;
+          margin: 0;
+          margin-right: 2vw;
+
+        }
+
+        & div:nth-child(2) {
+          order: 2;
+
+        }
+      }
+    }
+  } 
+
+  .form__section {
+    & article {
+
+      margin: auto;
+
+
+      & p {
+        font-size: 22px;
+        font-family: var(--principalTypo__light);
+        max-width: 980px;
+
+      }
+    }
+  }
+
+  .test {
+    background-color: red;
+    
+  }
+
+}

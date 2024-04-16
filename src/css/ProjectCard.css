@@ -1,0 +1,27 @@
+.ProjectCard {
+  margin-bottom: 32px;
+
+  & img {
+    aspect-ratio: 16/10;
+    width: 100%;
+    margin-bottom: 16px;
+
+  }
+
+  & li {
+    border-top: 1px solid var(--principal__100);
+    font-size: 18px;
+    font-family: var(--principalTypo__regular);
+    padding: 12px 0 12px 0;
+    display: flex;
+    justify-content: space-between;
+
+    & .colorTag {
+      content: "";
+      border-radius: 100%;
+      padding: 1px 12px;
+      margin-left: 12px;
+      
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.ProjectGrid {
+  margin-top: 32px;
+
+  & > ul {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+}
+
+@media only screen and (min-width: 860px) and (orientation: landscape) {
+
+  .ProjectGrid {
+    justify-content: space-between;
+
+    & .ProjectCard {
+      width: 48.5%;
+      margin-bottom: 72px;
+      
+    }
+
+    & .ProjectCard:nth-child(odd) {
+     margin-right: 3%;
+    }
+  }
+}

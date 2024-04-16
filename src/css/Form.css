@@ -1,0 +1,144 @@
+.Form {
+  text-align: right;
+
+  & li {
+    margin-top: 24px;
+
+    & input, textarea {
+      width: 100%;
+      background-color: rgb(255, 255, 255, 0);
+      border: none;
+      border-bottom: 1px solid var(--principal__100);
+      padding: 10px 0;
+      font-family: var(--principalTypo__light);
+      font-size: 15px;
+      height: 40px;
+
+    }
+
+    & textarea {
+      resize: none;
+      overflow: hidden;
+      transition: ease all .5s;
+
+    }
+
+    & ::placeholder {
+      color: var(--principal__50);
+      opacity: 1;
+
+    }
+
+    & :focus {
+      outline:0px;
+
+    }
+
+    & :focus::placeholder {
+      color: var(--principal__100);
+
+    }
+
+    & button {
+      font-size: 14px;
+      font-family: var(--principalTypo__regular);
+      color: #fff;
+      padding: 10px 48px;
+      border-radius: 24px;
+      border: none;
+      background-color: var(--campaigns__100);
+      margin-top: 40px;
+      transition: ease all .5s;
+
+    }
+  } 
+
+  & p {
+    font-family: var(--principalTypo__light);
+    color: var(--principal__100);
+    font-size: 22px;
+    text-align: left;
+    margin-top: 40px;
+  
+  }
+
+  & .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 16px;
+  }
+
+  .checkbox-container {
+
+    & label {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: flex-start;
+      font-family: var(--principalTypo__light);
+      color: var(--principal__100);
+      
+    }
+
+    & input {
+      margin-right: 8px;
+      width: auto;
+    }
+
+  }
+
+  .msg_sended {
+    padding: 16px 0px;
+  }
+
+  .msg_sended_title {
+    color: var(--campaigns__100);
+    margin: 0;
+    
+  }
+
+  .msg_sended_text {
+    font-size: 16px !important;
+    margin: 16px 0 0 0;
+
+  }
+
+  
+}
+
+@media only screen and (min-width: 860px) and (orientation: landscape) {
+
+  & form {
+          
+    & li {
+      width: 50%;
+
+    } 
+
+    & li:nth-child(3) {
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+
+      & textarea {
+        margin-right: 72px;
+
+      }
+    }
+
+    & button {
+      margin: 0 !important;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--campaigns__50);
+
+      }
+
+      &:active {
+        background-color: var(--campaigns__100);
+
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Diseño" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #008273;
+      }
+
+      .cls-2 {
+        fill: #eb6464;
+      }
+
+      .cls-3 {
+        fill: #ffb4b4;
+      }
+    </style>
+  </defs>
+  <ellipse class="cls-3" cx="12" cy="3.18" rx="3.24" ry="3.18"/>
+  <ellipse class="cls-2" cx="12" cy="21.56" rx="3.24" ry="3.18"/>
+  <ellipse class="cls-1" cx="12" cy="12.37" rx="3.24" ry="3.18"/>
+</svg>

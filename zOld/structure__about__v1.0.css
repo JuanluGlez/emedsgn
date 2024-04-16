@@ -1,0 +1,224 @@
+.section__about {
+
+    & section {
+
+        height: fit-content;
+
+    }
+
+    & p {
+
+        font-family: var(--principalTypo__light);
+        font-size: 20px;
+        line-height: 1.5;
+        color: var(--principal__100);
+
+    }
+
+    & .section__presentation {
+
+        padding: 32px;
+
+        & article {
+
+            margin-top: 24vh;
+
+            & img {
+
+                margin-bottom: 32px;
+                width: 100%;
+            
+            }
+
+            & div {
+
+                width: 100%;
+
+                & p {
+
+                    margin-bottom: 24px;
+
+                }
+
+                & ul {
+
+                    font-family: var(--principalTypo__light);
+                    color: var(--principal__100);
+                    font-size: 17px;
+                    line-height: 1.5;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    & section:nth-child(2) {
+
+        & article {
+
+            & header {
+
+                font-family: var(--principalTypo__medium);
+                align-self: flex-start;
+                justify-content: flex-start;
+                position: relative;
+
+            }
+
+            & p {
+
+                font-family: var(--principalTypo__light);
+                width: 100%;
+
+            }
+
+        }
+
+        & article:nth-child(2) {
+
+            margin-bottom: 80px;
+
+        }
+
+        & .accordion1 {
+
+            border-top: 1px solid var(--principal__100);
+
+        }
+
+        & .accordion1, .accordion2 {
+
+           height: 70px;
+           overflow: hidden;
+           cursor: pointer;
+           transition: .5s ease all;
+        
+           & header {
+
+            border-bottom: 1px solid var(--principal__100);
+            padding: 16px 0;
+            font-family: var(--principalTypo__medium);
+            font-size: 24px;
+            line-height: 1.5;
+            color: var(--principal__100);
+
+           }
+        
+        }
+
+        & .accordion__open {
+
+            height: 320px;
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 1170px) and (orientation: landscape) {
+
+    .section__about {
+
+        & .section__presentation {
+
+            height: fit-content;
+            padding: 0 72px;
+            
+
+            & article {
+    
+                margin-top: 15vh;
+                display: flex;
+                height: fit-content;
+    
+                & img {
+    
+                    margin-right: 64px;
+                    width: 38%;
+                    margin-bottom: 0;
+                    object-fit:cover;
+                    object-position:center center;
+                
+                }
+    
+                & div {
+
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: flex-end;
+
+                    & p {
+
+                        margin: 0;
+                        margin-bottom: 32px;
+
+                    }
+
+                    & ul {
+
+                        margin: 0;
+
+                    }
+
+                    & a {
+
+                        font-size: 24px;
+                        bottom: 0;
+                        height: fit-content;
+                        position: absolute;
+
+                    }
+    
+                }
+    
+            }
+    
+        }
+
+        & section:nth-child(2) {
+
+           margin-top: calc(200px - 80px);
+
+            & article {
+
+               margin: 0;
+               padding: 0;
+    
+                & header {
+    
+                    font-family: var(--principalTypo__medium);
+                    align-self: flex-start;
+                    justify-content: flex-start;
+                    position: relative;
+    
+                }
+    
+            }
+    
+            & .accordion1, .accordion2 {
+    
+               height: 118px;
+            
+               & header {
+    
+                    font-size: 56px;
+    
+               }
+            
+            }
+    
+            & .accordion__open {
+    
+                height: 260px;
+    
+            }
+    
+        }
+    
+    }
+
+}

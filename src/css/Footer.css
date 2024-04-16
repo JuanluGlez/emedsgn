@@ -1,0 +1,64 @@
+.Footer {
+  padding: 24px 32px 48px 32px;
+  background-color: var(--principal__100);
+  
+}
+
+.prefooter {
+  margin: 0 0 48px 0;
+  width: 100%;
+
+  & .SEOtext {
+    font-family: var(--principalTypo__regular);
+    font-size: 16px;
+    line-height: 1.3;
+    color: #fff;
+
+  }
+}
+
+& .footer {
+  font-family: var(--principalTypo__regular);
+  padding: 0 ;
+  color: #fff;
+  font-size: 16px;
+
+  & img {
+    width: 32px;
+    display: block;
+    margin-bottom: 24px;
+
+  }
+}
+
+@media only screen and (min-width: 860px) and (orientation: landscape) {
+  
+  .Footer {
+    padding: 80px 32px 100px 64px;
+
+  }
+
+  .prefooter {
+    margin-bottom: 80px;
+
+    & p {
+      margin: 0;
+
+    }
+  }
+
+  footer {
+    display: flex;
+
+    & img {
+      margin-right: 24px;
+      padding-top: 3px;
+
+    }
+
+    & span {
+      max-width: 870px;
+
+    }
+  }
+}

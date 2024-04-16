@@ -1,0 +1,17 @@
+.main__section {
+  padding: 48px 32px;
+  
+}
+
+@media only screen and (min-width: 860px) and (orientation: landscape) {
+    
+  .main__section {
+    padding: 80px;
+
+  }
+
+  .resize__content {
+    width: calc(100vw - 300px) !important;
+    transition: ease all 1s !important;
+  }
+}
